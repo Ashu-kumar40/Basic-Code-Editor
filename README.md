@@ -1,5 +1,6 @@
 # Basic-Code-Editor
 ### Codepen Like Code Editor
+*Live preview:* https://codepen-like-code-editor.netlify.app/
 
 This is a basic code editor clone like codepen that includes the following features:
 
@@ -12,6 +13,8 @@ This is a basic code editor clone like codepen that includes the following featu
 
 
 ### Basic Code Editor
+*Live preview:* https://basic-codeditor.netlify.app/
+
 This is a basic code editor clone like codepen that includes the following features:
 
 * Copy code to clipboard
