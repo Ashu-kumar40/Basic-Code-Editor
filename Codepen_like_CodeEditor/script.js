@@ -51,3 +51,20 @@ copyJs.addEventListener("click", () => {
     alert("JS Code copied to clipboard");
   }
 });
+
+// Lock the editor
+htmlLock.addEventListener("click", () => {
+  const isLocked = htmlCode.disabled;
+  htmlCode.disabled = !isLocked;
+  htmlCode.style.backgroundColor = isLocked ? "#202020" : "#303030"; 
+});
+cssLock.addEventListener("click", () => {
+  const isLocked = cssCode.disabled;
+  cssCode.disabled = !isLocked;
+  cssCode.style.backgroundColor = isLocked ? "#202020" : "#303030"; 
+});
+jsLock.addEventListener("click", () => {
+  const isLocked = jsCode.disabled;
+  jsCode.disabled = !isLocked;
+  jsCode.style.backgroundColor = isLocked ? "#202020" : "#303030"; 
+});
