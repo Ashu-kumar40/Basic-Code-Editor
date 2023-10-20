@@ -68,3 +68,19 @@ jsLock.addEventListener("click", () => {
   jsCode.disabled = !isLocked;
   jsCode.style.backgroundColor = isLocked ? "#202020" : "#303030"; 
 });
+
+// Indentation with tab key 
+htmlCode.addEventListener('keydown', (e) => {
+  if (e.key === 'Tab') {
+    e.preventDefault();
+    e.stopPropagation();
+    let start = htmlCode.selectionStart;
+    let end = htmlCode.selectionEnd;
+
+    // Adding four space character at the cursor position
+    htmlCode.value = htmlCode.value.substring(0, start) + '    ' + htmlCode.value.substring(end);
+    
+    // Move the cursor position after the tab
+    htmlCode.selectionStart = htmlCode.selectionEnd = start + 4;
+}
+});
