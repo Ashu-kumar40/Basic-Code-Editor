@@ -15,3 +15,39 @@ function run() {
     htmlCode.value + "<style>" + cssCode.value + "</style>";
   output.contentWindow.eval(jsCode.value);
 }
+
+// Copy the HTML code to clipboard
+copyHtml.addEventListener("click", () => {
+  const code = htmlCode.value;
+  if (code == "") {
+    alert("HTML Code is empty");
+    return;
+  } else {
+    navigator.clipboard.writeText(code);
+    alert("HTML Code copied to clipboard");
+  }
+});
+
+// Copy the CSS code to clipboard
+copyCss.addEventListener("click", () => {
+  const code = cssCode.value;
+  if (code == "") {
+    alert("CSS Code is empty");
+    return;
+  } else {
+    navigator.clipboard.writeText(code);
+    alert("CSS Code copied to clipboard");
+  }
+});
+
+// Copy the JS code to clipboard
+copyJs.addEventListener("click", () => {
+  const code = jsCode.value;
+  if (code == "") {
+    alert("JS Code is empty");
+    return;
+  } else {
+    navigator.clipboard.writeText(code);
+    alert("JS Code copied to clipboard");
+  }
+});
