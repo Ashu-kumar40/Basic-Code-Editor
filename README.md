@@ -8,9 +8,9 @@ This is a basic code editor clone like codepen that includes the following featu
 * Indentation on `Tab` key
 * Live preview
 
-![Alt text](./Assets/image.png)
+![Codepan-Clone](https://github.com/Ashu-kumar40/Basic-Code-Editor/assets/95637428/6ddbed5b-3c25-4506-beee-0932e557fdff)
 
-![Alt text](./Assets/image-1.png)
+
 ### Basic Code Editor
 This is a basic code editor clone like codepen that includes the following features:
 
@@ -19,7 +19,7 @@ This is a basic code editor clone like codepen that includes the following featu
 * Indentation on `Tab` key
 * Save code to file
 
-![Alt text](./Assets/image-2.png)
+![Basic-Code-Editor](https://github.com/Ashu-kumar40/Basic-Code-Editor/assets/95637428/1c14576d-a966-45e4-b8c0-e1581683c8ac)
 ### How to use
 
 1. Type or paste code into the code editor.
