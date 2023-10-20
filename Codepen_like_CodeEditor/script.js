@@ -84,3 +84,33 @@ htmlCode.addEventListener('keydown', (e) => {
     htmlCode.selectionStart = htmlCode.selectionEnd = start + 4;
 }
 });
+
+cssCode.addEventListener('keydown', (e) => {
+  if (e.key === 'Tab') {
+    e.preventDefault();
+    e.stopPropagation();
+    let start = cssCode.selectionStart;
+    let end = cssCode.selectionEnd;
+
+    // Adding four space character at the cursor position
+    cssCode.value = cssCode.value.substring(0, start) + '    ' + cssCode.value.substring(end);
+    
+    // Move the cursor position after the tab
+    cssCode.selectionStart = cssCode.selectionEnd = start + 4;
+}
+});
+
+jsCode.addEventListener('keydown', (e) => {
+  if (e.key === 'Tab') {
+    e.preventDefault();
+    e.stopPropagation();
+    let start = jsCode.selectionStart;
+    let end = jsCode.selectionEnd;
+
+    // Adding four space character at the cursor position
+    jsCode.value = jsCode.value.substring(0, start) + '    ' + jsCode.value.substring(end);
+    
+    // Move the cursor position after the tab
+    jsCode.selectionStart = jsCode.selectionEnd = start + 4;
+}
+});
